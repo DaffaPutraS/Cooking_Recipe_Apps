@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.BBQ_sauce_friedChicken_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_bbq_friedchkn_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_bbq_friedchkn_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bbq_friedchkn"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BBQ sauce fried chicken"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_bbq_friedchkn_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_bbq_friedchkn_food_detail"
+        android:background="@drawable/favorite_hover"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_bbq_friedchkn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_friedchkn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 4 boneless, skinless chicken breasts"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_bbq_friedchkn"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_friedchkn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 cup all-purpose flour"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_friedchkn_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_friedchkn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tsp paprika"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_friedchkn_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_friedchkn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tsp garlic powder"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_friedchkn_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_friedchkn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 tsp salt"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_friedchkn_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_friedchkn_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 tsp black pepper"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_friedchkn_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_friedchkn_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 tsp black pepper"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_friedchkn_6" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_friedchkn_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 eggs, beaten"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_friedchkn_7" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_friedchkn_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 cup BBQ sauce"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_friedchkn_8" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_friedchkn_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup vegetable oil"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_friedchkn_9" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_friedchkn_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Chopped fresh parsley for garnish"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_friedchkn_10" />
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textview_steps_title_bbq_friedchkn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_bbq_friedchkn_11"
+                android:layout_alignStart="@+id/textview_ingredients_bbq_friedchkn_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_friedchkn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. Preheat the oven to 350°F (175°C)."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_bbq_friedchkn"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_friedchkn"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_friedchkn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. In a shallow dish, combine all-purpose flour, paprika, garlic powder, salt, and black pepper. Mix well."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_friedchkn_1"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_friedchkn"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_friedchkn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Dip each chicken breast in beaten eggs, and then dredge it in the flour mixture until coated evenly."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_friedchkn_2"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_friedchkn"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_friedchkn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Heat vegetable oil in a large skillet over medium-high heat. Add the chicken breasts and cook for 4-5 minutes per side or until golden brown and crispy."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_friedchkn_3"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_friedchkn"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_friedchkn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. Remove the chicken breasts from the skillet and place them on a baking sheet."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_friedchkn_4"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_friedchkn"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_friedchkn_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Brush BBQ sauce evenly over each chicken breast."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_friedchkn_5"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_friedchkn"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_friedchkn_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Bake the chicken in the preheated oven for 10-15 minutes or until the internal temperature reaches 165°F (74°C)."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_friedchkn_6"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_friedchkn"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_friedchkn_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 8. Garnish the chicken with chopped fresh parsley and serve hot."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_friedchkn_7"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_friedchkn"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

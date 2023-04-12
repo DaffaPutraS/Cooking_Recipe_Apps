@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Beef_Teriyaki_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_beef_teriyaki_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_beef_teriyaki_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/beef_teriyaki"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beef Teriyaki"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_beef_teriyaki_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_beef_teriyaki_food_detail"
+        android:background="@drawable/favorite_hover"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_beef_teriyaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_teriyaki_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 pound flank steak, sliced against the grain into thin strips"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_beef_teriyaki"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_teriyaki_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup soy sauce"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_teriyaki_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_teriyaki_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup mirin"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_teriyaki_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_teriyaki_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup sake"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_teriyaki_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_teriyaki_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 tablespoons brown sugar"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_teriyaki_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_teriyaki_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 cloves garlic, minced"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_teriyaki_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_teriyaki_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 teaspoon grated ginger"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_teriyaki_6" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_teriyaki_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 tablespoons vegetable oil"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_teriyaki_7" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_teriyaki_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 green onions, thinly sliced (optional)"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_teriyaki_8" />
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textview_steps_title_beef_teriyaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_beef_teriyaki_9"
+                android:layout_alignStart="@+id/textview_ingredients_beef_teriyaki_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_teriyaki_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. In a medium-sized bowl, whisk together soy sauce, mirin, sake, brown sugar, garlic, and ginger until well combined."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_beef_teriyaki"
+                android:layout_alignStart="@+id/textview_steps_title_beef_teriyaki"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_teriyaki_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. Add the sliced beef to the bowl and toss until the meat is fully coated in the marinade. Cover and let marinate in the refrigerator for at least 30 minutes, or up to 2 hours."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_beef_teriyaki_1"
+                android:layout_alignStart="@+id/textview_steps_title_beef_teriyaki"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_teriyaki_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Heat a large skillet or wok over high heat. Add the vegetable oil and swirl to coat the pan."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_beef_teriyaki_2"
+                android:layout_alignStart="@+id/textview_steps_title_beef_teriyaki"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_teriyaki_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Once the pan is hot, add the beef and marinade to the skillet, stirring occasionally, until the beef is browned on all sides and cooked through. This should take about 5-7 minutes."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_beef_teriyaki_3"
+                android:layout_alignStart="@+id/textview_steps_title_beef_teriyaki"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_teriyaki_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. Transfer the beef and sauce to a serving plate and sprinkle with green onions, if desired."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_beef_teriyaki_4"
+                android:layout_alignStart="@+id/textview_steps_title_beef_teriyaki"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_teriyaki_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Serve the beef teriyaki over steamed rice or with your choice of vegetables. Enjoy!"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_beef_teriyaki_5"
+                android:layout_alignStart="@+id/textview_steps_title_beef_teriyaki"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

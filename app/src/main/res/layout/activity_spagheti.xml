@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Spagheti_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_spagheti_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_spagheti_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/spageti"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spagheti"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_spagheti_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_spagheti_food_detail"
+        android:background="@drawable/favorite_hover"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_spagheti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_spagheti_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 pound spaghetti"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_spagheti"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_spagheti_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 6-8 cups of water"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_spagheti_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_spagheti_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Salt to taste"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_spagheti_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_spagheti_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Olive oil for cooking"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_spagheti_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_spagheti_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2-3 garlic cloves, minced"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_spagheti_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_spagheti_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 tsp red pepper flakes (optional)"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_spagheti_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_spagheti_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 can (28 oz) of crushed tomatoes"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_spagheti_6" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_spagheti_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup chopped fresh basil"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_spagheti_7" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_spagheti_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Parmesan cheese for topping (optional)"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_spagheti_8" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/textview_steps_title_spagheti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_spagheti_9"
+                android:layout_alignStart="@+id/textview_ingredients_spagheti_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_spagheti_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. Fill a large pot with 6-8 cups of water and add salt to taste. Bring the water to a boil over high heat."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_spagheti"
+                android:layout_alignStart="@+id/textview_steps_title_spagheti"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_spagheti_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. Add spaghetti to the boiling water and stir well. Cook the spaghetti for 8-10 minutes or until al dente (cooked but still firm)."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_spagheti_1"
+                android:layout_alignStart="@+id/textview_steps_title_spagheti"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_spagheti_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. While the spaghetti is cooking, heat olive oil in a large saucepan over medium heat. Add minced garlic and red pepper flakes (optional) and sauté for 1-2 minutes or until fragrant."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_spagheti_2"
+                android:layout_alignStart="@+id/textview_steps_title_spagheti"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_spagheti_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Add crushed tomatoes to the saucepan and bring it to a simmer. Let the sauce simmer for 5-7 minutes or until slightly thickened."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_spagheti_3"
+                android:layout_alignStart="@+id/textview_steps_title_spagheti"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_spagheti_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. Once the spaghetti is cooked, drain it in a colander and rinse it under cold running water to stop the cooking process."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_spagheti_4"
+                android:layout_alignStart="@+id/textview_steps_title_spagheti"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_spagheti_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Add the cooked spaghetti to the saucepan with the tomato sauce and toss it well to coat the spaghetti with the sauce."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_spagheti_5"
+                android:layout_alignStart="@+id/textview_steps_title_spagheti"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_spagheti_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Add chopped fresh basil to the saucepan and stir well."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_spagheti_6"
+                android:layout_alignStart="@+id/textview_steps_title_spagheti"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_spagheti_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 8. Serve the spaghetti hot with grated Parmesan cheese on top, if desired."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_spagheti_7"
+                android:layout_alignStart="@+id/textview_steps_title_spagheti"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

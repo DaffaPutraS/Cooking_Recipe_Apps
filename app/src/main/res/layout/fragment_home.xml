@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AjaFragment.ProfileFragment"
+    android:background="@drawable/bg_home">
+
+    <TextView
+        android:id="@+id/textview_welcome_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/margarine"
+        android:text="Welcome to"
+        android:textColor="@color/white"
+        android:textSize="21dp" />
+
+    <ImageView
+        android:id="@+id/imageview_logo_home"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:src="@drawable/logo_transparan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/textview_welcome_to"/>
+
+    <ScrollView
+        android:layout_below="@id/imageview_logo_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview_recomended_for_you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recomended for you"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/verdana_bold"
+                android:layout_alignStart="@id/cardview_pan_seared_salmon" />
+    <!-- Pan Sared Salmon -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_pan_seared_salmon"
+        android:layout_width="350dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        android:layout_below="@+id/textview_recomended_for_you">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pan_seared_salmon"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pan Sared Salmon"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_gravity="center"
+            android:textSize="18dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Grilled Pizza -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_grilled_pizza"
+        android:layout_width="165dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/cardview_pan_seared_salmon"
+        android:layout_alignStart="@id/cardview_pan_seared_salmon"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/grilled_pizza"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grilled Pizza"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_gravity="center"
+            android:textSize="18dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Fish Tacos al Pastor -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_fish_tacos_al_pastor"
+        android:layout_width="164dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/cardview_pan_seared_salmon"
+        android:layout_alignEnd="@+id/cardview_pan_seared_salmon"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fish_tacos_al_pastor"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fish Tacos al Pastor"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_gravity="center"
+            android:textSize="14dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textview_dessert_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview_fish_tacos_al_pastor"
+        android:text="Dessert Recipe"
+        android:layout_alignStart="@+id/cardview_grilled_pizza"
+        android:fontFamily="@font/verdana_bold"
+        android:layout_marginTop="14dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_chocolate_molten_eggs"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textview_dessert_recipe"
+        android:layout_alignStart="@id/textview_dessert_recipe"
+        android:layout_marginTop="6dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/chocolate_molten_eggs"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate Molten Eggs"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="45dp"
+            android:textSize="12dp"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_chocolate_truffle"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textview_dessert_recipe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/chocolate_truffle"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate Truffle"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="45dp"
+            android:textSize="12dp"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_floating_island"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textview_dessert_recipe"
+        android:layout_alignEnd="@+id/cardview_fish_tacos_al_pastor"
+        android:layout_marginTop="6dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/floating_island"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Floating Island"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="60dp"
+            android:textSize="12dp"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textview_simple_under_30_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simple Under 30 Minute"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/verdana_bold"
+                android:layout_below="@id/cardview_chocolate_molten_eggs"
+                android:layout_alignStart="@+id/cardview_chocolate_molten_eggs"
+                android:layout_marginTop="15dp"/>
+
+    <androidx.cardview.widget.CardView
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:id="@+id/cardview_cashew_curry"
+                android:layout_below="@id/textview_simple_under_30_minute"
+                android:layout_alignStart="@id/textview_dessert_recipe"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cashew_curry"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cashew Curry"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_gravity="bottom"
+                android:textSize="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="6dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:id="@+id/cardview_cauliflower_bolognese"
+                android:layout_below="@id/textview_simple_under_30_minute"
+                android:layout_alignStart="@id/cardview_chocolate_truffle"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cauliflower_bolognese"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cauliflower Bolognese"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_gravity="bottom"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="6dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:id="@+id/cardview_classic_meatloaf"
+                android:layout_below="@id/textview_simple_under_30_minute"
+                android:layout_alignStart="@id/cardview_floating_island"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/classic_meatloaf"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Classic Meatloaf"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_gravity="bottom"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="6dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

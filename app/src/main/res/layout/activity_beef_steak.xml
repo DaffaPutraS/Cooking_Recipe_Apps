@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Beef_Steak_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_beef_steak_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_beef_steak_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/beef_steak"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beef Steak"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_beef_steak_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_beef_steak_food_detail"
+        android:background="@drawable/favorite_hover"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_beef_steak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_steak_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 pound beef steak (ribeye, sirloin, or filet mignon)"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_beef_steak"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_steak_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Salt and black pepper to taste"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_steak_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_steak_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Salt to taste"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_steak_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_steak_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Olive oil for cooking"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_steak_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_steak_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2-3 cloves of garlic, minced"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_steak_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_steak_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2-3 sprigs of fresh thyme"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_steak_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_beef_steak_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2-3 tbsp butter"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_beef_steak_6" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textview_steps_title_beef_steak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_beef_steak_7"
+                android:layout_alignStart="@+id/textview_ingredients_beef_steak_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_steak_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. Take the steak out of the refrigerator and let it sit at room temperature for 30 minutes before cooking."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_beef_steak"
+                android:layout_alignStart="@+id/textview_steps_title_beef_steak"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_steak_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. Preheat a large skillet or grill pan over medium-high heat."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_beef_steak_1"
+                android:layout_alignStart="@+id/textview_steps_title_beef_steak"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_steak_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Season both sides of the steak with salt and black pepper to taste."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_beef_steak_2"
+                android:layout_alignStart="@+id/textview_steps_title_beef_steak"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_steak_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Drizzle olive oil over the steak and use your hands to rub the oil all over the steak."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_beef_steak_3"
+                android:layout_alignStart="@+id/textview_steps_title_beef_steak"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_steak_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. Once the skillet is hot, place the steak on the skillet and cook for 4-5 minutes per side for medium-rare, or adjust the time to your desired level of doneness."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_beef_steak_4"
+                android:layout_alignStart="@+id/textview_steps_title_beef_steak"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_steak_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Add minced garlic, fresh thyme, and butter to the skillet during the last 2 minutes of cooking, and use a spoon to baste the steak with the butter and aromatics."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_beef_steak_5"
+                android:layout_alignStart="@+id/textview_steps_title_beef_steak"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_steak_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Once the steak is cooked to your liking, remove it from the skillet and let it rest for 5 minutes on a cutting board."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_beef_steak_6"
+                android:layout_alignStart="@+id/textview_steps_title_beef_steak"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_beef_steak_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 8. Slice the steak against the grain into 1/2-inch slices and serve it hot with your favorite sides."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_beef_steak_7"
+                android:layout_alignStart="@+id/textview_steps_title_beef_steak"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

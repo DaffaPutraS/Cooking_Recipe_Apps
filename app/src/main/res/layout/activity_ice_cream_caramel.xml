@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Ice_Cream_Caramel_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_ice_cream_caramel_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_ice_cream_caramel_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ice_cream_caramel"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ice Cream Caramel"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_ice_cream_caramel_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_ice_cream_caramel_food_detail"
+        android:background="@drawable/favorite_hover"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_ice_cream_caramel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_ice_cream_caramel_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 cup granulated sugar"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_ice_cream_caramel"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_ice_cream_caramel_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup water"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_ice_cream_caramel_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_ice_cream_caramel_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup cornstarch"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_ice_cream_caramel_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_ice_cream_caramel_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 cups heavy cream"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_ice_cream_caramel_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_ice_cream_caramel_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 teaspoon vanilla extract"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_ice_cream_caramel_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_ice_cream_caramel_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 teaspoon salt"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_ice_cream_caramel_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_ice_cream_caramel_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 5 large egg yolks"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_ice_cream_caramel_6" />
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_ice_cream_caramel_7"
+                android:layout_alignStart="@+id/textview_ingredients_ice_cream_caramel_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_ice_cream_caramel_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. In a medium-sized saucepan, combine the sugar and water."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_alignStart="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_ice_cream_caramel_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. Cook over medium-high heat, stirring occasionally, until the sugar dissolves and turns into a deep amber color. This should take about 10 minutes."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_ice_cream_caramel_1"
+                android:layout_alignStart="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_ice_cream_caramel_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Remove the saucepan from the heat and immediately whisk in the heavy cream. Be careful as the mixture may splatter and steam."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_ice_cream_caramel_2"
+                android:layout_alignStart="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_ice_cream_caramel_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Return the saucepan to the stove and add the milk, vanilla extract, and salt. Stir well and heat the mixture over medium heat until it's hot but not boiling."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_ice_cream_caramel_3"
+                android:layout_alignStart="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_ice_cream_caramel_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. In a separate bowl, whisk the egg yolks until they're light and frothy."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_ice_cream_caramel_4"
+                android:layout_alignStart="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_ice_cream_caramel_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Gradually pour the hot cream mixture into the egg yolks while whisking constantly to temper the yolks and prevent them from scrambling."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_ice_cream_caramel_5"
+                android:layout_alignStart="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_ice_cream_caramel_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Pour the mixture back into the saucepan and heat over medium heat, stirring constantly, until the mixture thickens and coats the back of a spoon. This should take about 5-7 minutes."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_ice_cream_caramel_6"
+                android:layout_alignStart="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_ice_cream_caramel_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 8. Remove the saucepan from the heat and strain the mixture through a fine-mesh strainer into a clean bowl."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_ice_cream_caramel_7"
+                android:layout_alignStart="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_ice_cream_caramel_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 9. Chill the mixture in the refrigerator until it's completely cold, at least 2 hours or overnight."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_ice_cream_caramel_8"
+                android:layout_alignStart="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_ice_cream_caramel_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 10. Pour the chilled mixture into an ice cream maker and churn according to the manufacturer's instructions, usually around 20-30 minutes."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_ice_cream_caramel_9"
+                android:layout_alignStart="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_ice_cream_caramel_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 11. Transfer the ice cream to a freezer-safe container and freeze until firm, at least 2 hours."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_ice_cream_caramel_10"
+                android:layout_alignStart="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_ice_cream_caramel_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 12. Serve the caramel ice cream and enjoy!"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_ice_cream_caramel_11"
+                android:layout_alignStart="@+id/textview_steps_title_ice_cream_caramel"
+                android:layout_marginTop="5dp"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

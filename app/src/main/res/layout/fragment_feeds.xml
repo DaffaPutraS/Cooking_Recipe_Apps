@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaFragment.FeedsFragment"
+    android:background="@drawable/bg_feeds">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="370dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/custom_searchbar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/searchbar"
+        app:iconifiedByDefault="false"
+        app:searchHintIcon="@null"
+        app:queryHint="Search something..."
+        android:focusable="false"
+        app:closeIcon="@drawable/ic_baseline_clear_24"
+        app:searchIcon="@drawable/ic_baseline_search_24"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Cashew_Curry_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_cashew_curry_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_cashew_curry_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cashew_curry"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cashew Curry"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_cashew_curry_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_cashew_curry_food_detail"
+        android:background="@drawable/favorite_hover"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_cashew_curry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 cup cashew nuts"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_cashew_curry"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 medium-sized onions, chopped"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 medium-sized tomatoes, chopped"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2-3 green chillies, chopped"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tsp ginger-garlic paste"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 tsp cumin seeds"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 tsp coriander powder"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_6" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 tsp turmeric powder"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_7" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 4 egg yolks"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_8" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 tsp red chilli powder"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_9" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 cup cream or coconut milk"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_10" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Salt to taste"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_11" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Oil for cooking"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_12" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cashew_curry_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Fresh coriander leaves for garnishing"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_13" />
+
+
+
+            <TextView
+                android:id="@+id/textview_steps_title_cashew_curry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_cashew_curry_14"
+                android:layout_alignStart="@+id/textview_ingredients_cashew_curry_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cashew_curry_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. Soak the cashew nuts in warm water for 15-20 minutes. Drain the water and grind the cashews into a fine paste. Set aside."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_cashew_curry"
+                android:layout_alignStart="@+id/textview_steps_title_cashew_curry"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cashew_curry_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. Heat oil in a pan and add cumin seeds. When they start to splutter, add chopped onions and green chillies. Saute until onions turn golden brown."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_cashew_curry_1"
+                android:layout_alignStart="@+id/textview_steps_title_cashew_curry"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cashew_curry_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Add ginger-garlic paste and saute for another minute."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_cashew_curry_2"
+                android:layout_alignStart="@+id/textview_steps_title_cashew_curry"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cashew_curry_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Add chopped tomatoes and cook until they turn soft and mushy."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_cashew_curry_3"
+                android:layout_alignStart="@+id/textview_steps_title_cashew_curry"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cashew_curry_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. Add coriander powder, turmeric powder, red chilli powder and salt. Mix well and cook for a few minutes."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_cashew_curry_4"
+                android:layout_alignStart="@+id/textview_steps_title_cashew_curry"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cashew_curry_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Add the cashew paste and mix well. Cook for 2-3 minutes."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_cashew_curry_5"
+                android:layout_alignStart="@+id/textview_steps_title_cashew_curry"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cashew_curry_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Add cream or coconut milk and mix well. Simmer for 5-6 minutes until the gravy thickens."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_cashew_curry_6"
+                android:layout_alignStart="@+id/textview_steps_title_cashew_curry"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cashew_curry_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 8. Garnish with fresh coriander leaves and serve hot with rice or naan."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_cashew_curry_7"
+                android:layout_alignStart="@+id/textview_steps_title_cashew_curry"
+                android:layout_marginTop="5dp"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

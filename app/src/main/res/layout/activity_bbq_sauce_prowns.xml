@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.BBQ_sauce_prowns_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_bbq_sauceprowns_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_bbq_sauceprowns_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bbq_sauceprowns"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BBQ sauce prowns"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_bbq_sauceprowns_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_bbq_sauceprowns_food_detail"
+        android:background="@drawable/favorite_hover"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_bbq_sauceprowns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_sauceprowns_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 pound large prawns (or shrimp), peeled and deveined"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_bbq_sauceprowns"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_sauceprowns_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Salt and black pepper to taste"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_sauceprowns_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_sauceprowns_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 tbsp olive oil"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_sauceprowns_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_sauceprowns_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 cloves garlic, minced"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_sauceprowns_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_sauceprowns_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 cup BBQ sauce"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_sauceprowns_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_sauceprowns_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup honey"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_sauceprowns_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_sauceprowns_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 tbsp soy sauce"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_sauceprowns_6" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_sauceprowns_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tbsp apple cider vinegar"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_sauceprowns_7" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_sauceprowns_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tbsp Worcestershire sauce"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_sauceprowns_8" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_sauceprowns_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 tsp smoked paprika"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_sauceprowns_9" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_sauceprowns_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 tsp cayenne pepper"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_sauceprowns_10" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_bbq_sauceprowns_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Chopped fresh parsley for garnish"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_bbq_sauceprowns_11" />
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textview_steps_title_bbq_sauceprowns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_bbq_sauceprowns_11"
+                android:layout_alignStart="@+id/textview_ingredients_bbq_sauceprowns_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_sauceprowns_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. Season prawns with salt and black pepper to taste."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_bbq_sauceprowns"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_sauceprowns"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_sauceprowns_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. Heat olive oil in a large skillet over medium-high heat."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_sauceprowns_1"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_sauceprowns"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_sauceprowns_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Add minced garlic and cook for 1-2 minutes or until fragrant."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_sauceprowns_2"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_sauceprowns"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_sauceprowns_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Add the prawns to the skillet and cook for 2-3 minutes per side or until they turn pink and are cooked through."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_sauceprowns_3"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_sauceprowns"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_sauceprowns_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. In a small bowl, whisk together BBQ sauce, honey, ketchup, soy sauce, apple cider vinegar, Worcestershire sauce, smoked paprika, and cayenne pepper."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_sauceprowns_4"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_sauceprowns"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_sauceprowns_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Pour the BBQ sauce mixture into the skillet with the prawns and stir well to coat the prawns evenly with the sauce."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_sauceprowns_5"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_sauceprowns"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_sauceprowns_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Reduce the heat to low and simmer for 2-3 minutes or until the sauce thickens."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_sauceprowns_6"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_sauceprowns"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_bbq_sauceprowns_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 8. Garnish with chopped fresh parsley and serve hot."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_bbq_sauceprowns_7"
+                android:layout_alignStart="@+id/textview_steps_title_bbq_sauceprowns"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

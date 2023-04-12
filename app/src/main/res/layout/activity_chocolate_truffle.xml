@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Chocolate_Truffle_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_chocolate_truffle_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_chocolate_truffle_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/chocolate_truffle"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate Truffle"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_chocolate_truffle_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_chocolate_truffle_food_detail"
+        android:background="@drawable/favorite_hover"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_chocolate_truffle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_truffle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 8 oz (225g) semisweet chocolate, chopped"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_chocolate_truffle"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_truffle_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 cup (120ml) heavy cream"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_truffle_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_truffle_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup (56g) unsalted butter, cut into small pieces"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_truffle_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_truffle_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tsp vanilla extract"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_truffle_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_truffle_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Cocoa powder or chopped nuts for rolling (optional)"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_truffle_4" />
+
+            <TextView
+                android:id="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_truffle_5"
+                android:layout_alignStart="@+id/textview_ingredients_chocolate_truffle_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_truffle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. Place the chopped chocolate in a large heatproof bowl."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_truffle_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. In a small saucepan, heat the heavy cream over medium heat until it comes to a simmer."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_truffle_1"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_truffle_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Pour the hot cream over the chocolate and let it sit for 1-2 minutes."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_truffle_2"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_truffle_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Add the butter and vanilla extract to the bowl and whisk everything together until the chocolate is melted and the mixture is smooth."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_truffle_3"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_truffle_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. Cover the bowl with plastic wrap and chill the mixture in the refrigerator for 2-3 hours, or until it is firm enough to shape."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_truffle_4"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_truffle_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Using a spoon or a small scoop, scoop out small balls of the chocolate mixture and roll them into truffle shapes. If desired, roll the truffles in cocoa powder or chopped nuts to coat them."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_truffle_5"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_truffle_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Place the truffles on a baking sheet lined with parchment paper and chill them in the refrigerator for another 30 minutes to set."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_truffle_6"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_truffle_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 8. Serve the chocolate truffles chilled or at room temperature."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_truffle_7"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_truffle_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 9. Sprinkle some salt and black pepper over the toppings."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_truffle_8"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_truffle_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 10. Close the lid of the grill and let the pizza cook for another 5-6 minutes, or until the cheese is melted and bubbly and the crust is crispy."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_truffle_9"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_truffle_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 11. Use tongs to remove the pizza from the grill and let it rest for a minute or two."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_truffle_10"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_truffle_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 12. Slice the pizza and serve it hot."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_truffle_11"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_truffle"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

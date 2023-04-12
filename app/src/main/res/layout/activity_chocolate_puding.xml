@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Chocolate_Puding_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_chocolate_puding_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_chocolate_puding_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/chocolate_puding"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate Pudding"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_chocolate_puding_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_chocolate_puding_food_detail"
+        android:background="@drawable/favorite_hover"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_chocolate_puding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_puding_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 3/4 cup granulated sugar"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_chocolate_puding"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_puding_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/3 cup unsweetened cocoa powder"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_puding_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_puding_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup cornstarch"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_puding_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_puding_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 teaspoon salt"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_puding_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_puding_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 3 cups whole milk"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_puding_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_puding_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 4 oz semi-sweet chocolate, chopped"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_puding_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_puding_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 teaspoons vanilla extract"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_puding_6" />
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textview_steps_title_chocolate_puding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_puding_7"
+                android:layout_alignStart="@+id/textview_ingredients_chocolate_puding_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_puding_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. In a medium-sized saucepan, whisk together sugar, cocoa powder, cornstarch, and salt."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_chocolate_puding"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_puding"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_puding_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. Gradually whisk in the whole milk, making sure there are no lumps."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_puding_1"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_puding"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_puding_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Heat the mixture over medium heat, stirring constantly with a whisk until it thickens and comes to a boil. This should take about 8-10 minutes."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_puding_2"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_puding"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_puding_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Once the mixture boils, continue to whisk for an additional 2-3 minutes until it becomes very thick."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_puding_3"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_puding"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_puding_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. Remove the saucepan from the heat and stir in the chopped chocolate and vanilla extract until the chocolate is melted and the mixture is smooth."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_puding_4"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_puding"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_puding_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Pour the pudding into individual serving dishes or a large bowl."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_puding_5"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_puding"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_puding_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Cover with plastic wrap, making sure the wrap is touching the surface of the pudding to prevent a skin from forming."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_puding_6"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_puding"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_puding_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 8. Chill the pudding in the refrigerator for at least 2 hours, or until it's set and firm."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_puding_7"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_puding"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_puding_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 9. Serve the chocolate pudding cold with whipped cream, if desired. Enjoy!"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_puding_8"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_puding"
+                android:layout_marginTop="5dp"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

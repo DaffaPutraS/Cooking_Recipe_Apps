@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Floating_Island_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_floating_island_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_floating_island_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/floating_island"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Floating Island"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_floating_island_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview_floating_island_food_detail"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/favorite_hover" />
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_floating_island"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For the meringues:"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_floating_island"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 4 egg whites"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup (50g) granulated sugar"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 tsp vanilla extract"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Pinch of salt"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For the custard:"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 cups (480ml) whole milk"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_6" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 cup (100g) granulated sugar"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_7" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 4 egg yolks"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_8" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tsp vanilla extract"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_9" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Pinch of salt"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_10" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For the caramel sauce (optional):"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_11" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 cup (100g) granulated sugar"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_12" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 tbsp water"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_13" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup (60ml) heavy cream"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_14" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_floating_island_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Pinch of salt"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_15" />
+
+
+
+
+            <TextView
+                android:id="@+id/textview_steps_title_floating_island"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_floating_island_16"
+                android:layout_alignStart="@+id/textview_ingredients_floating_island_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. To make the meringues, preheat your oven to 300°F (150°C) and line a baking sheet with parchment paper."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_floating_island"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. In a mixing bowl, beat the egg whites with an electric mixer until they form soft peaks."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_1"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Gradually add the sugar, vanilla extract, and salt, and continue beating until the egg whites form stiff, glossy peaks."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_2"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Using a spoon or a piping bag, drop or pipe the meringue mixture into 6-8 small mounds onto the prepared baking sheet."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_3"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. Bake the meringues for about 20-25 minutes, or until they are lightly golden and crisp on the outside."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_4"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Remove the meringues from the oven and let them cool completely."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_5"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. To make the custard, heat the milk in a saucepan over medium heat until it comes to a simmer."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_6"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 8. In a mixing bowl, whisk together the sugar, egg yolks, vanilla extract, and salt until well combined."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_7"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 9. Gradually pour the hot milk into the egg yolk mixture, whisking continuously."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_8"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 10. Return the custard mixture to the saucepan and cook it over low heat, stirring constantly, until it thickens enough to coat the back of a spoon."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_9"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 11. Remove the custard from the heat and let it cool to room temperature."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_10"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 12. To make the caramel sauce, combine the sugar and water in a saucepan and heat it over medium heat until the sugar dissolves."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_11"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 13. Increase the heat to high and cook the sugar mixture, without stirring, until it turns golden brown."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_12"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 14. Remove the saucepan from the heat and carefully stir in the heavy cream and salt until well combined."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_13"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 15. To assemble the dessert, spoon some of the custard into each serving dish."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_14"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 16. Place one or two meringues on top of the custard in each dish."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_15"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 17. Spoon a little more custard over the meringues to cover them."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_16"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 18. Drizzle some of the caramel sauce over each dessert, if desired."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_17"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_floating_island_19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 19. Chill the desserts in the refrigerator for at least 1 hour before serving."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_floating_island_18"
+                android:layout_alignStart="@+id/textview_steps_title_floating_island"
+                android:layout_marginTop="5dp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

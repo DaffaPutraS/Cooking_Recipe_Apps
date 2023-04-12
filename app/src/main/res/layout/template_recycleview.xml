@@ -1,0 +1,36 @@
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/recyclerview"
+        android:layout_width="360dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="30dp">
+
+        <ImageView
+            android:id="@+id/recyclercardimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/barbeque"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/recyclercardtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barbeque"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="24sp"/>
+
+    </androidx.cardview.widget.CardView>
+

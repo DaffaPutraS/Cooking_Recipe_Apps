@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Cauliflower_Bolognese_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_cauliflower_bolognese_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_cauliflower_bolognese_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cauliflower_bolognese"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cauliflower Bolognese"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_cauliflower_bolognese_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_cauliflower_bolognese_food_detail"
+        android:background="@drawable/favorite_hover"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_cauliflower_bolognese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_cauliflower_bolognese_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 head of cauliflower, chopped into small pieces"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_cauliflower_bolognese"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cauliflower_bolognese_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 onion, finely chopped"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cauliflower_bolognese_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cauliflower_bolognese_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2-3 cloves of garlic, minced"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cauliflower_bolognese_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cauliflower_bolognese_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 cups of tomato puree"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cauliflower_bolognese_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cauliflower_bolognese_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tsp dried oregano"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cauliflower_bolognese_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cauliflower_bolognese_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tsp dried basil"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cauliflower_bolognese_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cauliflower_bolognese_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 tsp red pepper flakes (optional)"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cauliflower_bolognese_6" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cauliflower_bolognese_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Salt and pepper to taste"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cauliflower_bolognese_7" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cauliflower_bolognese_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Olive oil for cooking"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cauliflower_bolognese_8" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cauliflower_bolognese_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Fresh parsley or basil for garnishing"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cauliflower_bolognese_9" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_cauliflower_bolognese_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Spaghetti or any pasta of your choice"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_cauliflower_bolognese_10" />
+
+
+
+
+            <TextView
+                android:id="@+id/textview_steps_title_cauliflower_bolognese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_cauliflower_bolognese_11"
+                android:layout_alignStart="@+id/textview_ingredients_cauliflower_bolognese_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cauliflower_bolognese_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. Heat olive oil in a large saucepan or pot over medium heat. Add chopped onion and garlic and sauté until the onion turns translucent."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_cauliflower_bolognese"
+                android:layout_alignStart="@+id/textview_steps_title_cauliflower_bolognese"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cauliflower_bolognese_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. Add chopped cauliflower to the pot and stir well. Cook for 5-7 minutes or until the cauliflower is slightly tender."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_cauliflower_bolognese_1"
+                android:layout_alignStart="@+id/textview_steps_title_cauliflower_bolognese"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cauliflower_bolognese_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Add tomato puree, dried oregano, dried basil, red pepper flakes (optional), salt, and pepper to the pot. Mix well."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_cauliflower_bolognese_2"
+                android:layout_alignStart="@+id/textview_steps_title_cauliflower_bolognese"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cauliflower_bolognese_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Bring the sauce to a boil, then reduce the heat to low and let it simmer for 20-30 minutes. Stir occasionally."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_cauliflower_bolognese_3"
+                android:layout_alignStart="@+id/textview_steps_title_cauliflower_bolognese"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cauliflower_bolognese_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. Use an immersion blender or transfer the sauce to a blender and blend until smooth."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_cauliflower_bolognese_4"
+                android:layout_alignStart="@+id/textview_steps_title_cauliflower_bolognese"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cauliflower_bolognese_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Cook spaghetti or any pasta according to package directions."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_cauliflower_bolognese_5"
+                android:layout_alignStart="@+id/textview_steps_title_cauliflower_bolognese"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_cauliflower_bolognese_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Serve the Cauliflower Bolognese sauce over cooked pasta and garnish with fresh parsley or basil."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_cauliflower_bolognese_6"
+                android:layout_alignStart="@+id/textview_steps_title_cauliflower_bolognese"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

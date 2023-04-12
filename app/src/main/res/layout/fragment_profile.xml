@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AjaFragment.ProfileFragment"
+    android:background="@drawable/bg_profile">
+    
+    <ImageView
+        android:id="@+id/imageview_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_logo"
+        android:text="Username"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_setting_profile"
+        android:layout_width="350dp"
+        android:layout_height="303dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="20dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="About"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/verdana"
+            android:elevation="0dp"
+            android:id="@+id/btnAboutUs"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Privacy and Policy"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/verdana"
+            android:elevation="0dp"
+            android:id="@+id/btnPolicy"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="FAQ"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:layout_marginTop="119dp"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/verdana"
+            android:elevation="0dp"
+            android:id="@+id/btnFaq"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Contact US"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:layout_marginTop="179dp"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/verdana"
+            android:elevation="0dp"
+            android:id="@+id/btnContactUs"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Version"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:layout_marginTop="238dp"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/verdana"
+            android:elevation="0dp"
+            android:id="@+id/btnVersion"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/cardview_setting_profile"
+        android:layout_alignStart="@+id/cardview_setting_profile"
+        android:layout_marginTop="130dp"
+        android:text="Logout"
+        android:id="@+id/btn_Logout"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_regular"/>
+
+
+
+</RelativeLayout>

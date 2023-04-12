@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Chocolate_Molten_Eggs_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_chocolate_molten_eggs_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_chocolate_molten_eggs_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/chocolate_molten_eggs"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate Molten Eggs"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_chocolate_molten_eggs_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_chocolate_molten_eggs_food_detail"
+        android:background="@drawable/favorite_hover"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_chocolate_molten_eggs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_molten_eggs_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 8 large eggs"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_chocolate_molten_eggs"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_molten_eggs_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 cup semisweet chocolate chips"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_molten_eggs_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_molten_eggs_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 cup unsalted butter"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_molten_eggs_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_molten_eggs_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup granulated sugar"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_molten_eggs_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_molten_eggs_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup all-purpose flour"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_molten_eggs_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_molten_eggs_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 tsp vanilla extract"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_molten_eggs_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_chocolate_molten_eggs_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Pinch of salt"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_molten_eggs_6" />
+
+            <TextView
+                android:id="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_chocolate_molten_eggs_7"
+                android:layout_alignStart="@+id/textview_ingredients_chocolate_molten_eggs_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_molten_eggs_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. Preheat your oven to 375°F (190°C)."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_molten_eggs_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. Melt the chocolate chips and butter together in a double boiler or in the microwave, stirring until smooth."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_molten_eggs_1"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_molten_eggs_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. In a mixing bowl, whisk the eggs and sugar together until well combined."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_molten_eggs_2"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_molten_eggs_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Add the flour, vanilla extract, and salt to the egg mixture and whisk until smooth."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_molten_eggs_3"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_molten_eggs_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. Slowly pour the melted chocolate mixture into the egg mixture, whisking continuously until the mixture is well combined."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_molten_eggs_4"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_molten_eggs_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Grease 8 small ramekins or custard cups with butter."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_molten_eggs_5"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_molten_eggs_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Pour the chocolate mixture into the ramekins, filling them about three-quarters full."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_molten_eggs_6"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_molten_eggs_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 8. Place the ramekins on a baking sheet and bake for 10-12 minutes, or until the edges are set but the centers are still slightly wobbly."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_molten_eggs_7"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_molten_eggs_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 9. Remove the ramekins from the oven and allow them to cool for a few minutes."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_molten_eggs_8"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_molten_eggs_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 10. Carefully run a knife around the edges of each ramekin to loosen the chocolate eggs."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_molten_eggs_9"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_molten_eggs_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 11. Place a plate over each ramekin and invert it to remove the chocolate egg."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_molten_eggs_10"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_chocolate_molten_eggs_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 12. Serve the Chocolate Molten Eggs warm, garnished with fresh berries or a dusting of powdered sugar."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_chocolate_molten_eggs_11"
+                android:layout_alignStart="@+id/textview_steps_title_chocolate_molten_eggs"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

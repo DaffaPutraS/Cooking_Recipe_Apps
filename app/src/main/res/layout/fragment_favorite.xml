@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AjaFragment.FavoriteFragment"
+    android:background="@drawable/bg_favorite">
+
+    <TextView
+        android:id="@+id/textview_my_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Favorite"
+        android:fontFamily="@font/margarine"
+        android:textColor="@color/white"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="13dp"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/imageview_template"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"/>
+
+
+    <ScrollView
+        android:layout_below="@id/textview_my_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/textview_my_favorite"
+        android:layout_alignEnd="@+id/imageview_template">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_spagheti"
+                android:layout_width="175dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/spageti"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spagheti"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="18dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_beef_steak"
+                android:layout_width="175dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/beef_steak" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beef Steak"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="18dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_bbq_friedchkn"
+                android:layout_width="175dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                android:layout_below="@+id/cardview_spagheti">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bbq_friedchkn"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BBQ sauce fried chicken"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15sp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_bbq_sauceprowns"
+                android:layout_width="175dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/cardview_beef_steak">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bbq_sauceprowns" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BBQ sauce prowns"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_chocolate_puding"
+                android:layout_width="175dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                android:layout_below="@+id/cardview_bbq_friedchkn">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/chocolate_puding"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chocolate Puding"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15sp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_ice_cream_caramel"
+                android:layout_width="175dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/cardview_bbq_sauceprowns">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ice_cream_caramel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ice Cream Caramel"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_beef_teriyaki"
+                android:layout_width="175dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                android:layout_below="@+id/cardview_chocolate_puding">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/beef_teriyaki"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beef Teriyaki"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15sp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_chicken_steak"
+                android:layout_width="175dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/cardview_ice_cream_caramel">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/chiken_steak" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken Steak"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjaMenu.Classic_Meatloaf_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_classic_meatloaf_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <ImageView
+            android:id="@+id/imageview_classic_meatloaf_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/classic_meatloaf"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Classic Meatloaf"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="@font/margarine"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow_left_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_classic_meatloaf_food_detail"
+        android:src="@drawable/ic_arrow_left_food_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_favorite_food_detail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview_classic_meatloaf_food_detail"
+        android:background="@drawable/favorite_hover"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <ScrollView
+        android:layout_below="@id/imageview_arrow_left_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageview_arrow_left_food_detail"
+        android:layout_alignEnd="@+id/imageview_favorite_food_detail">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_ingredients_title_classic_meatloaf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 pounds ground beef"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_title_classic_meatloaf"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 cup breadcrumbs"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_1" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 onion, finely chopped"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_2" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 cloves of garlic, minced"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_3" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 2 eggs, beaten"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_4" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 cup milk"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_5" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup ketchup"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_6" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tbsp Worcestershire sauce"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_7" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tsp dried basil"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_8" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tsp salt"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_9" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/2 tsp black pepper"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_10" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Olive oil for cooking"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_11" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For the Glaze:"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_12" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1/4 cup ketchup"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_13" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tbsp brown sugar"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_14" />
+
+            <TextView
+                android:id="@+id/textview_ingredients_classic_meatloaf_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 tbsp apple cider vinegar"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_15" />
+
+
+
+
+            <TextView
+                android:id="@+id/textview_steps_title_classic_meatloaf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="19sp"
+                android:layout_below="@+id/textview_ingredients_classic_meatloaf_16"
+                android:layout_alignStart="@+id/textview_ingredients_classic_meatloaf_1"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_classic_meatloaf_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 1. Preheat the oven to 350°F (175°C)."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_title_classic_meatloaf"
+                android:layout_alignStart="@+id/textview_steps_title_classic_meatloaf"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_classic_meatloaf_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 2. In a large mixing bowl, combine ground beef, breadcrumbs, onion, garlic, eggs, milk, ketchup, Worcestershire sauce, dried thyme, dried basil, salt, and black pepper. Mix well with your hands or a wooden spoon."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_classic_meatloaf_1"
+                android:layout_alignStart="@+id/textview_steps_title_classic_meatloaf"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_classic_meatloaf_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 3. Grease a loaf pan with olive oil."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_classic_meatloaf_2"
+                android:layout_alignStart="@+id/textview_steps_title_classic_meatloaf"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_classic_meatloaf_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 4. Transfer the meat mixture to the greased loaf pan and press it down evenly."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_classic_meatloaf_3"
+                android:layout_alignStart="@+id/textview_steps_title_classic_meatloaf"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_classic_meatloaf_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 5. In a small mixing bowl, mix together ketchup, brown sugar, and apple cider vinegar to make the glaze. Spread the glaze over the meatloaf."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_classic_meatloaf_4"
+                android:layout_alignStart="@+id/textview_steps_title_classic_meatloaf"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_classic_meatloaf_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 6. Bake the meatloaf in the preheated oven for 60-75 minutes or until the internal temperature reaches 160°F (70°C)."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_classic_meatloaf_5"
+                android:layout_alignStart="@+id/textview_steps_title_classic_meatloaf"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textview_steps_classic_meatloaf_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→ 7. Let the meatloaf rest for 10 minutes before slicing and serving."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="16sp"
+                android:layout_below="@+id/textview_steps_classic_meatloaf_6"
+                android:layout_alignStart="@+id/textview_steps_title_classic_meatloaf"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
